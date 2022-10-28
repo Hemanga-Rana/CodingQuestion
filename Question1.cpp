@@ -12,6 +12,7 @@ void rearrangeItems(int array[], int n)
             temp[i] = array[large--];
         else
             temp[i] = array[small++];
+            
         flag = !flag;
     }
     for (int i = 0; i < n; i++)
