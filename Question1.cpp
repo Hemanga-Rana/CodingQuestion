@@ -6,7 +6,7 @@ void rearrangeItems(int array[], int n)
     int temp[n];
     int small = 0, large = n - 1;
     int flag = true;
-
+    
     for (int i = 0; i < n; i++) {
         if (flag)
             temp[i] = array[large--];
@@ -15,7 +15,6 @@ void rearrangeItems(int array[], int n)
 
         flag = !flag;
     }
-    
     for (int i = 0; i < n; i++)
         array[i] = temp[i];
 }
